@@ -1,2 +1,33 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+
+<div class= "header"> 
+<h1>Likelion Review Forum</h1>
+<p>Open space for questions, thoughts and ideas</p>
+</div> 
+
+<div class ="container"> 
+
+<br> 
+<form action = "/add" method = "POST">
+    Date (mm/dd/yyyy): <input type ="text" name ="aa"><br>
+    Rate (X out of 5): <input type ="number" name ="bb"><br>
+    Opinion:  <input type ="text" name ="cc" style="width: 500px;"><br>
+    <input type = "submit">
+</form>
+
+<br>
+
+
+<% @hello.each do |t| %> 
+    <div class="table"> 
+    Date: <%= t.date %><br>
+    Rate: <%= t.rate %> out of 5<br>
+    Opinion: <%= t.opinion %><br>
+    
+    <a href = "/delete/<%=t.id%>">[Delete]</a><br> 
+    <a href = "/modify/<%=t.id%>">[Update]</a><br> 
+    <br> 
+    </div> 
+<% end %> 
+
+</div> 
+

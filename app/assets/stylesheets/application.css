@@ -13,3 +13,40 @@
  *= require_tree .
  *= require_self
  */
+html{
+  font-family: Comic Sans MS; 
+ }
+ 
+ 
+ .header{
+    padding: 6px;
+    background-color: gold;
+    color:white;
+    font-family: Comic Sans MS;
+    margin: 0;
+    text-align: center;
+    height: 140px;
+    } 
+
+  body{
+   margin:0;
+  }
+  
+.container{
+ margin-left: 10px; 
+ 
+}
+    
+    
+.table{
+ border: 0.5px solid;
+}
+
+.footer {
+	width: 100%;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	color: #ffffff;
+	background-color: gold;
+ text-align:center; 
+}

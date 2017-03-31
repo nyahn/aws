@@ -1,0 +1,9 @@
+<h1>Update/Edit Your Review Here</h1>
+
+<br> 
+<form action ='/update/<%=@post.id%>' method = 'post'>
+    Date: <input type = "text" name = "date" value = "<%=@post.date %>"><br>
+    Rate: <input type = "number" name = "rate" value = "<%=@post.rate %>"><br> 
+    Opinion: <input type = "text" name = "opinion" value = "<%=@post.opinion %>" style="width: 500px;"><br> 
+    <input type = "submit">
+</form>
